@@ -68,6 +68,14 @@ Repository for assignment 6
 - At the bottom of the page of the app, there is the checkout tab which actually leads to the cart page, and this page has these components: 
 - The components used in this page are the same components used in the home page.
 
-# Storage Nethod
+# Storage M![shot1](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/20b1735a-242e-42ee-b95b-bfb9aac25e54)
+![shot1](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/20b1735a-242e-42ee-b95b-bfb9aac25e54)
+![shot 4](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/f8dfd5ce-9654-4b6c-88d1-8f1a6f03f644)
+![shot 4](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/f8dfd5ce-9654-4b6c-88d1-8f1a6f03f644)
+![shot 3](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/83259868-0076-48b0-b225-18bdf730182b)
+![shot 3](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/83259868-0076-48b0-b225-18bdf730182b)
+![shot 2](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/1201b4bc-0c71-40d7-89fa-d1e6ea8e65b7)
+![shot 2](https://github.com/techpepson/rn-assignment6-11335214/assets/124635484/1201b4bc-0c71-40d7-89fa-d1e6ea8e65b7)
+ethod
 - Data storage in this app was implememted with the asyncStorage library in react native
 - This library has methods like getItem and setItem, which can be used to retrieve items from the storage and also place items in the storage respectively.
