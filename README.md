@@ -53,3 +53,21 @@ Join our community of developers creating universal apps.
 # rn-assignment6-11335214
 Repository for assignment 6
 >>>>>>> 909863955803febe460cf9519f92bf1a5e488b6f
+# Description of project
+- This project is a fashion store, where users or visitors of the app can be able to see available clothing, their prices and all that and also be able to add an item to a cart. There are two pages, the home page and the cart page.
+# Home Page
+- The home page is the page that users first see when they visit the app and this page contains view of the clothing available and also be able to add to cart.
+- The home page has these components used:
+# Components In The Home Page
+- Image: The image component is a component used to render images in the homepage.
+- Pressable: The Pressable component is a component that makes an image or an element clickable. This clickable compoenent is used on the add to cart button.
+- Text: The text component is used to render texts in the homepage.
+- Header: The Header component is a custom compoent that renders the header at the top of the page.
+
+# Cart Page
+- At the bottom of the page of the app, there is the checkout tab which actually leads to the cart page, and this page has these components: 
+- The components used in this page are the same components used in the home page.
+
+# Storage Nethod
+- Data storage in this app was implememted with the asyncStorage library in react native
+- This library has methods like getItem and setItem, which can be used to retrieve items from the storage and also place items in the storage respectively.

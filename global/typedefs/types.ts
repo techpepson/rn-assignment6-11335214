@@ -1,0 +1,1 @@
+//type definitions for the various items, expecially in the array

@@ -1,7 +1,17 @@
+//type definition for the various elements defined here
+
+export interface CartTypes {
+  image: number;
+  topDescription: string;
+  bottomDescription: string;
+  price: string;
+  addToCartButton: number;
+  id: number;
+}
 
 //images to display in the landing page
 
-export const landingPageImages = [
+export const landingPageImages: CartTypes[] = [
   {
     image: require("../assets/images/dress2.png"),
     topDescription: "Black",

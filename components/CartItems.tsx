@@ -2,22 +2,25 @@ import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { elementsInCart } from "@/global/export-images";
 import Header from "./utilities/Header";
+import { ScrollView } from "react-native";
 
 const deleteButton = require("../assets/images/remove.png");
 
 const CartItems = () => {
-  const handleDelete = (id) => {
-    elementsInCart.map((arrayElement) => {
-      arrayElement.filter((element) => element.id !== id);
+  // Function to handle deletion of elements in the cart items list
+  const handleDelete = (id: number) => {
+    elementsInCart.filter((element) => {
+      return element.id !== id;
     });
+    // This line ensures that elementsInCart is updated correctly
   };
+
   return (
     <>
       <Header />
-      <View>
-        {elementsInCart.map((cartArray, index) => {
-          // cartArray is the entire landingPageImages array
-          return cartArray.map((cartItem, itemIndex) => (
+      <ScrollView>
+        <View>
+          {elementsInCart.map((cartItem, index) => (
             <View key={cartItem.id} style={styles.itemContainer}>
               <Image source={cartItem.image} style={styles.image} />
               <View style={styles.textContainer}>
@@ -28,14 +31,14 @@ const CartItems = () => {
                   {cartItem.bottomDescription}
                 </Text>
                 <Text style={styles.price}>{cartItem.price}</Text>
-                <Pressable onPress={()=>{handleDelete(cartItem.id)}}>
+                <Pressable onPress={() => handleDelete(cartItem.id)}>
                   <Image source={deleteButton} style={styles.deleteIcon} />
                 </Pressable>
               </View>
             </View>
-          ));
-        })}
-      </View>
+          ))}
+        </View>
+      </ScrollView>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { Image, Pressable, StatusBar, Text, View } from "react-native";
-import React, { useState } from "react";
+import React from "react";
 import { landingPageImages } from "@/global/export-images";
 import { FlatList } from "react-native";
 import Header from "./utilities/Header";
@@ -17,7 +17,13 @@ const LandingPage = () => {
   //function to handle adding to cart when a button is pressed
   const handleAddToCart = (element) => {
     //map through images array to add to the empty cart array
-    elementsInCart.push(element);
+    elementsInCart.push({
+      image: element.image,
+      price: element.price,
+      topDescription: element.topDescription,
+      bottomDescription: element.bottomDescription,
+      id: element.id,
+    });
     // setAddedToCart(true);
   };
 
