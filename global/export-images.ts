@@ -1,3 +1,4 @@
+
 //images to display in the landing page
 
 export const landingPageImages = [
@@ -7,6 +8,7 @@ export const landingPageImages = [
     bottomDescription: "reversible angora cargigan",
     price: "$120",
     addToCartButton: require("../assets/images/add_circle.png"),
+    id: 1,
   },
   {
     image: require("../assets/images/dress3.png"),
@@ -14,6 +16,7 @@ export const landingPageImages = [
     bottomDescription: "reversible angora cargigan",
     price: "$120",
     addToCartButton: require("../assets/images/add_circle.png"),
+    id: 2,
   },
   {
     image: require("../assets/images/dress4.png"),
@@ -21,6 +24,7 @@ export const landingPageImages = [
     bottomDescription: "reversible angora cargigan",
     price: "$120",
     addToCartButton: require("../assets/images/add_circle.png"),
+    id: 3,
   },
   {
     image: require("../assets/images/dress5.png"),
@@ -28,6 +32,7 @@ export const landingPageImages = [
     bottomDescription: "reversible angora cargigan",
     price: "$120",
     addToCartButton: require("../assets/images/add_circle.png"),
+    id: 4,
   },
   {
     image: require("../assets/images/dress6.png"),
@@ -35,6 +40,7 @@ export const landingPageImages = [
     bottomDescription: "reversible angora cargigan",
     price: "$120",
     addToCartButton: require("../assets/images/add_circle.png"),
+    id: 5,
   },
   {
     image: require("../assets/images/dress7.png"),
@@ -42,5 +48,9 @@ export const landingPageImages = [
     bottomDescription: "reversible angora cargigan",
     price: "$120",
     addToCartButton: require("../assets/images/add_circle.png"),
+    id: 6,
   },
 ];
+
+//empty arrray to contain elements added to cart
+export const elementsInCart = [];

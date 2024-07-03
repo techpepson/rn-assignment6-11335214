@@ -9,9 +9,9 @@ const cartIcon = require("../../assets/images/shoppingBag.png");
 const Header = () => {
   return (
     <View>
-      <View>
+      <View style={styles.headerPosition}>
         <Image source={menu} />
-        <Image source={logo} />
+        <Image source={logo} style={styles.headerSizes} />
         <Image source={search} />
         <Image source={cartIcon} />
       </View>
@@ -20,3 +20,17 @@ const Header = () => {
 };
 
 export default Header;
+
+const styles = {
+  headerPosition: {
+    marginTop: 40,
+    display: "flex",
+    flexDirection: "row",
+    gap: 5,
+    justifyContent: "space-around",
+  },
+  headerSizes: {
+    width: 85,
+    height: 35,
+  },
+};
